@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+    body{
+      background-color: rgb(27, 26, 26);
+    }
+    main{
+      width: 500px;
+      margin: auto;
+
+    }
+  
+    h1{
+      color: white;
+
+    }
+
+     #curso{
+       color: lightgreen;
+     }

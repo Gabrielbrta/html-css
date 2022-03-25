@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de hover</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    div:hover{
+      color: red;
+    }
+    #primeiro{
+      display: none;
+    }
+    .oculto{
+      display: none;
+    }
+    #primero:hover > p{
+      display: block;
+      background-color: green;
+    }
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color: red;
+    }
+    a:hover{
+      color: green;
+      text-decoration: underline;
+    }
+    a:visited{
+      color: blue;
+    }
+    .especial{
+      display: none;
+    }
+    #segundo:hover > p{
+      display: block;
+      background-color: yellow;
+      width: 200px;
+    }
+    .especial::before{
+      content: ">";
+    }
+    .especial::after{
+      content: '<';
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de hover</h1>
+  <p>Passe o mouse sobre o texto abaixo</p>
+  <div id="primero">
+    <h1>Lista oculta</h1>
+    <p class="oculto"><a href="https://www.youtube.com/?hl=pt&gl=BR" target="_blank">Acesse o link</a></p>
+    <p class="oculto"><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">Acesse o link</a></p>
+    <p class="oculto"><a href="https://www.serasaconsumidor.com.br/consultar-meu-cpf/" target="_blank">Acessar</a></p>
+  </div>
+  <div id="segundo">
+  <h1 id="subtitle">Especial</h1>
+  <p class="especial"><a href="https://www.receiteria.com.br/receitas-para-o-almoco-de-domingo/" target="_blank">Putos</a> </p>
+  <p class="especial"><a href="https://www.receiteria.com.br/receitas-para-almoco/" target="_blank">Familía</a></p>
+  <p class="especial"><a href="https://github.com/gustavoguanabara" target="_blank">Estudar</a></p>
+  <p class="especial"><a href="https://www.receitasnestle.com.br/blog-post/opcoes-almoco-rapido" target="_blank">Empreender</a></p>
+  <p class="especial">Fim do Exemplo</p>
+</div>
+</body>
+</html>
